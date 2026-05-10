@@ -2,12 +2,12 @@
   "info": {
     "_postman_id": "30beb8a3-bac8-4a30-8c1c-a2d708d958a1",
     "name": "Auth",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "27168280"
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
       "name": "Login Admin",
+      "id": "93a15004-97cf-4eb2-97f8-b0085aed1acd",
       "request": {
         "method": "POST",
         "header": [],
@@ -37,6 +37,7 @@
     },
     {
       "name": "Login Teacher",
+      "id": "ac80a5d1-e958-4031-b5db-65f8e2fd657e",
       "request": {
         "method": "POST",
         "header": [],
@@ -66,6 +67,7 @@
     },
     {
       "name": "Login Student",
+      "id": "fbd54e89-7c62-4391-bda5-e4775a9c1c2d",
       "request": {
         "method": "POST",
         "header": [],
@@ -95,6 +97,7 @@
     },
     {
       "name": "Register Teacher",
+      "id": "b53fc31c-95be-4909-9187-83509da4bb51",
       "request": {
         "auth": {
           "type": "bearer",
@@ -135,6 +138,7 @@
     },
     {
       "name": "Register Student",
+      "id": "06ed08b2-03fc-4268-a1ad-b0a7d7fac8e3",
       "request": {
         "auth": {
           "type": "bearer",

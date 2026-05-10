@@ -2,12 +2,12 @@
   "info": {
     "_postman_id": "b16885c3-4dd7-430f-a5f5-a4c661c7ec89",
     "name": "Payment",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "27168280"
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
       "name": "Create DebtTemplate",
+      "id": "4e318209-eb3d-474a-a64a-6e2b375d7436",
       "request": {
         "auth": {
           "type": "bearer",
@@ -47,6 +47,7 @@
     },
     {
       "name": "List DebtTemplates",
+      "id": "1c38abd7-26ca-4407-b701-3321149ec50d",
       "request": {
         "auth": {
           "type": "bearer",
@@ -77,6 +78,7 @@
     },
     {
       "name": "Get DebtTemplate By Id",
+      "id": "6bb750eb-f92d-4b21-9e99-d0c687a61020",
       "request": {
         "auth": {
           "type": "bearer",
@@ -108,6 +110,7 @@
     },
     {
       "name": "Update DebtTemplate",
+      "id": "ab0be24b-9ce6-4e56-b9b6-f69b861d0087",
       "request": {
         "auth": {
           "type": "bearer",
@@ -148,6 +151,7 @@
     },
     {
       "name": "Delete DebtTemplate",
+      "id": "6e32ad71-6d2a-41bd-afbf-5bc3f80650bc",
       "request": {
         "auth": {
           "type": "bearer",
@@ -179,6 +183,7 @@
     },
     {
       "name": "Create QR Debt",
+      "id": "1b97d6d3-1134-42e0-b90e-1d5b581933c7",
       "request": {
         "auth": {
           "type": "bearer",
@@ -225,6 +230,7 @@
     },
     {
       "name": "List Pending QR (Reconcile)",
+      "id": "31641af9-a045-4a44-ab77-4d56af80832c",
       "request": {
         "auth": {
           "type": "bearer",
@@ -256,6 +262,7 @@
     },
     {
       "name": "QR Callback (Public)",
+      "id": "ce396ee8-eaa2-4bf6-8693-1f318407a4a6",
       "request": {
         "method": "GET",
         "header": [],
@@ -290,6 +297,7 @@
     },
     {
       "name": "Verify QR Payment (Public)",
+      "id": "a37d48f4-18fd-4682-a66a-0bedc2a9724d",
       "request": {
         "method": "GET",
         "header": [],

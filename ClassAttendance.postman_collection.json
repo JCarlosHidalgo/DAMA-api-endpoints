@@ -2,12 +2,12 @@
   "info": {
     "_postman_id": "7b3acbe3-530b-4b9b-bc47-b61f8e0eead8",
     "name": "ClassAttendance",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "27168280"
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
       "name": "Get Scheduled Attendance By Class",
+      "id": "f6b02886-9f3f-4a08-b21a-71715d841320",
       "request": {
         "auth": {
           "type": "bearer",
@@ -43,6 +43,7 @@
     },
     {
       "name": "Get Scheduled Attendance By Student",
+      "id": "59268695-90f2-4d54-b16c-dc804d46e4d0",
       "request": {
         "auth": {
           "type": "bearer",
@@ -77,6 +78,7 @@
     },
     {
       "name": "Get Unique Attendance By Class",
+      "id": "cac4c9e1-39c6-46eb-9341-ed6c73e3008c",
       "request": {
         "auth": {
           "type": "bearer",
@@ -111,6 +113,7 @@
     },
     {
       "name": "Get Unique Attendance By Student",
+      "id": "0f3b7232-ae81-4d9d-ae9a-ccbe1b4c879d",
       "request": {
         "auth": {
           "type": "bearer",
@@ -145,6 +148,7 @@
     },
     {
       "name": "Increment Remain (Admin)",
+      "id": "13068001-4283-4d36-a90c-0e54c7423a43",
       "request": {
         "auth": {
           "type": "bearer",
@@ -185,6 +189,7 @@
     },
     {
       "name": "Mark Scheduled Attendance",
+      "id": "8919f57b-a9c9-41da-a0dd-720f838e883f",
       "request": {
         "auth": {
           "type": "bearer",
@@ -226,6 +231,7 @@
     },
     {
       "name": "Mark Unique Attendance",
+      "id": "20ba87e5-88a0-4e19-a7b2-8b96e67451a1",
       "request": {
         "auth": {
           "type": "bearer",
@@ -267,6 +273,7 @@
     },
     {
       "name": "Get My Remain",
+      "id": "4d9c04c6-bc7b-4042-a107-f9d0bf45fab1",
       "request": {
         "auth": {
           "type": "bearer",
@@ -299,6 +306,7 @@
     },
     {
       "name": "Get Student Remain",
+      "id": "1fdd6f80-fe02-4725-a5a2-04aff233ffc6",
       "request": {
         "auth": {
           "type": "bearer",

@@ -2,12 +2,12 @@
   "info": {
     "_postman_id": "78b6f003-f183-4f87-bd6b-bf8ecc5c60a5",
     "name": "CourseManagement",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "27168280"
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
       "name": "Get All Courses",
+      "id": "4649319b-5afd-4bad-bf75-d404f3db96bf",
       "request": {
         "auth": {
           "type": "bearer",
@@ -38,6 +38,7 @@
     },
     {
       "name": "Get Course By Id",
+      "id": "2e6682b3-9b17-46b2-9c90-c8b5c052c668",
       "request": {
         "auth": {
           "type": "bearer",
@@ -69,6 +70,7 @@
     },
     {
       "name": "Create Course",
+      "id": "ff3148d0-ad18-464b-b563-86579be1552b",
       "request": {
         "auth": {
           "type": "bearer",
@@ -108,6 +110,7 @@
     },
     {
       "name": "Update Course",
+      "id": "8185900d-4711-43e9-9f67-186d9f26129a",
       "request": {
         "auth": {
           "type": "bearer",
@@ -148,6 +151,7 @@
     },
     {
       "name": "Delete Course",
+      "id": "e4a340a0-8191-4ce5-974e-c04acf87e8c9",
       "request": {
         "auth": {
           "type": "bearer",
@@ -179,6 +183,7 @@
     },
     {
       "name": "Create Scheduled Class",
+      "id": "62b58cee-53f5-41bf-9f6a-f61d0760f577",
       "request": {
         "auth": {
           "type": "bearer",
@@ -219,6 +224,7 @@
     },
     {
       "name": "Update Scheduled Class",
+      "id": "1eb1c107-ac6f-4a55-b226-48fa2ad6dd88",
       "request": {
         "auth": {
           "type": "bearer",
@@ -260,6 +266,7 @@
     },
     {
       "name": "Delete Scheduled Class",
+      "id": "87c57127-f090-42d4-9f68-c6fe0f8af2a2",
       "request": {
         "auth": {
           "type": "bearer",
@@ -292,6 +299,7 @@
     },
     {
       "name": "Create Unique Class",
+      "id": "de968749-c29d-44a2-bb9f-5aac4901f72b",
       "request": {
         "auth": {
           "type": "bearer",
@@ -332,6 +340,7 @@
     },
     {
       "name": "Update Unique Class",
+      "id": "899712f8-4e27-4a78-bc8e-c7aada75b0e4",
       "request": {
         "auth": {
           "type": "bearer",
@@ -373,6 +382,7 @@
     },
     {
       "name": "Delete Unique Class",
+      "id": "051cfeef-6582-4b40-b551-2e0b499a4f1e",
       "request": {
         "auth": {
           "type": "bearer",
@@ -405,6 +415,7 @@
     },
     {
       "name": "Get Instructor Schedule (Me)",
+      "id": "eaf98e8a-6abc-401e-9035-d5b0470686cb",
       "request": {
         "auth": {
           "type": "bearer",
@@ -437,6 +448,7 @@
     },
     {
       "name": "Get Course Schedule",
+      "id": "a8c4b582-796d-4d1d-bd39-9482c73dd56f",
       "request": {
         "auth": {
           "type": "bearer",
@@ -473,6 +485,7 @@
     },
     {
       "name": "Scheduled Class Exists",
+      "id": "2448a0c8-751e-4387-9553-a5250c4bc923",
       "request": {
         "auth": {
           "type": "bearer",
@@ -507,6 +520,7 @@
     },
     {
       "name": "Unique Class Exists",
+      "id": "2cfb0dc4-8f13-41b7-9adb-73dced86e370",
       "request": {
         "auth": {
           "type": "bearer",

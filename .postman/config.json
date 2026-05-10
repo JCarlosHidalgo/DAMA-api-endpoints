@@ -1,0 +1,19 @@
+{
+  "workspace": {
+    "id": "28c27ba5-b8cb-4db3-8a52-0c7c202b4550"
+  },
+  "entities": {
+    "environments": [],
+    "flows": [],
+    "globals": [],
+    "mocks": [],
+    "specs": [],
+    "collections": [
+      "../Auth.postman_collection.json",
+      "../ClassAttendance.postman_collection.json",
+      "../CourseManagement.postman_collection.json",
+      "../Credentials.postman_collection.json",
+      "../Payment.postman_collection.json"
+    ]
+  }
+}
