@@ -1,13 +1,16 @@
-# Use this workspace to collaborate
 workspace:
   id: 3c6a86a5-78a0-43b0-834a-025321709b14
-
-# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
-
 cloudResources:
   collections:
-    ../postman/collections/Auth: 30beb8a3-bac8-4a30-8c1c-a2d708d958a1
-    ../postman/collections/ClassAttendance: 7b3acbe3-530b-4b9b-bc47-b61f8e0eead8
-    ../postman/collections/CourseManagement: 78b6f003-f183-4f87-bd6b-bf8ecc5c60a5
-    ../postman/collections/Credentials: d9865f83-6b8d-4f6d-a986-77f2e5d367a1
-    ../postman/collections/Payment: b16885c3-4dd7-430f-a5f5-a4c661c7ec89
+    ../postman/collections/Auth: 27168280-95f9cdbe-fcde-4ef2-8137-813b2eade7f5
+    ../postman/collections/ClassAttendance: 27168280-d8228cad-6526-4087-93c2-9faf36e688d7
+    ../postman/collections/CourseManagement: 27168280-c343b2e3-fe38-4c50-8abd-8346ea009910
+    ../postman/collections/Credentials: 27168280-fcae76de-4f2d-46b1-ac90-5e2dcb285f4a
+    ../postman/collections/Payment: 27168280-a74b4174-2ecd-4e17-97f2-285bfabb2a19
+localResources:
+  collections:
+    - ../postman/collections/Auth
+    - ../postman/collections/ClassAttendance
+    - ../postman/collections/CourseManagement
+    - ../postman/collections/Credentials
+    - ../postman/collections/Payment

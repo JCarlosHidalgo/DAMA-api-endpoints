@@ -1,0 +1,8 @@
+name: DAMA environments
+values:
+  - key: Admin JWT
+    value: ''
+  - key: Teacher JWT
+    value: ''
+  - key: Student JWT
+    value: ''
