@@ -1,0 +1,333 @@
+{
+  "info": {
+    "_postman_id": "7b3acbe3-530b-4b9b-bc47-b61f8e0eead8",
+    "name": "ClassAttendance",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "27168280"
+  },
+  "item": [
+    {
+      "name": "Get Scheduled Attendance By Class",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/ClassAttendance/ClassAttendance/attendance/scheduled/class/a44397bc-0fdd-4c57-a666-f76154b3434c/2025-09-01",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ClassAttendance",
+            "ClassAttendance",
+            "attendance",
+            "scheduled",
+            "class",
+            "a44397bc-0fdd-4c57-a666-f76154b3434c",
+            "2025-09-01"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Scheduled Attendance By Student",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/ClassAttendance/ClassAttendance/attendance/scheduled/student/6ba1c841-834f-4aeb-a285-a500b15638c9",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ClassAttendance",
+            "ClassAttendance",
+            "attendance",
+            "scheduled",
+            "student",
+            "6ba1c841-834f-4aeb-a285-a500b15638c9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Unique Attendance By Class",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/ClassAttendance/ClassAttendance/attendance/unique/class/bec401bb-6be2-4d6b-b207-c6ad946a6b51",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ClassAttendance",
+            "ClassAttendance",
+            "attendance",
+            "unique",
+            "class",
+            "bec401bb-6be2-4d6b-b207-c6ad946a6b51"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Unique Attendance By Student",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/ClassAttendance/ClassAttendance/attendance/unique/student/6ba1c841-834f-4aeb-a285-a500b15638c9",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ClassAttendance",
+            "ClassAttendance",
+            "attendance",
+            "unique",
+            "student",
+            "6ba1c841-834f-4aeb-a285-a500b15638c9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Increment Remain (Admin)",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"studentId\": \"6ba1c841-834f-4aeb-a285-a500b15638c9\",\n    \"quantity\": 10,\n    \"externalReference\": \"admin-grant-001\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/ClassAttendance/ClassAttendance/remain",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ClassAttendance",
+            "ClassAttendance",
+            "remain"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Mark Scheduled Attendance",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Student JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"classId\": \"a44397bc-0fdd-4c57-a666-f76154b3434c\",\n    \"classDate\": \"2025-09-01\",\n    \"courseName\": \"Salsa\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/ClassAttendance/ClassAttendance/attendance/scheduled",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ClassAttendance",
+            "ClassAttendance",
+            "attendance",
+            "scheduled"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Mark Unique Attendance",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Student JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"classId\": \"bec401bb-6be2-4d6b-b207-c6ad946a6b51\",\n    \"courseName\": \"Salsa\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/ClassAttendance/ClassAttendance/attendance/unique",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ClassAttendance",
+            "ClassAttendance",
+            "attendance",
+            "unique"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get My Remain",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Student JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/ClassAttendance/ClassAttendance/remain/me",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ClassAttendance",
+            "ClassAttendance",
+            "remain",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Student Remain",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/ClassAttendance/ClassAttendance/remain/6ba1c841-834f-4aeb-a285-a500b15638c9",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ClassAttendance",
+            "ClassAttendance",
+            "remain",
+            "6ba1c841-834f-4aeb-a285-a500b15638c9"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

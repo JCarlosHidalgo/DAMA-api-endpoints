@@ -1,0 +1,314 @@
+{
+  "info": {
+    "_postman_id": "b16885c3-4dd7-430f-a5f5-a4c661c7ec89",
+    "name": "Payment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "27168280"
+  },
+  "item": [
+    {
+      "name": "Create DebtTemplate",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"courseId\": \"5178b3ca-5a0f-4636-b99c-a9421e7c762e\",\n    \"description\": \"8 clases de Salsa\",\n    \"classQuantity\": 8,\n    \"cost\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/Payment/DebtTemplate",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "Payment",
+            "DebtTemplate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List DebtTemplates",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/Payment/DebtTemplate",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "Payment",
+            "DebtTemplate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get DebtTemplate By Id",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/Payment/DebtTemplate/b1d3f1f1-0000-4000-8000-000000000001",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "Payment",
+            "DebtTemplate",
+            "b1d3f1f1-0000-4000-8000-000000000001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update DebtTemplate",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"description\": \"30 clases de Salsa Premium\",\n    \"classQuantity\": 30,\n    \"cost\": 320\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/Payment/DebtTemplate/b1d3f1f1-0000-4000-8000-000000000001",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "Payment",
+            "DebtTemplate",
+            "b1d3f1f1-0000-4000-8000-000000000001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete DebtTemplate",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/Payment/DebtTemplate/b1d3f1f1-0000-4000-8000-000000000003",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "Payment",
+            "DebtTemplate",
+            "b1d3f1f1-0000-4000-8000-000000000003"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create QR Debt",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Student JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/Payment/qr/14624f15-00c4-455e-81ba-df5d12f66910?email=hidalgososajuancarlos@gmail.com",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "Payment",
+            "qr",
+            "14624f15-00c4-455e-81ba-df5d12f66910"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "hidalgososajuancarlos@gmail.com"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List Pending QR (Reconcile)",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Student JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/Payment/qr/pending",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "Payment",
+            "qr",
+            "pending"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "QR Callback (Public)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/payment/qr/callback?transaction_id={{PendingTransactionId}}&error=0&cancel_order=0",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "payment",
+            "qr",
+            "callback"
+          ],
+          "query": [
+            {
+              "key": "transaction_id",
+              "value": "{{PendingTransactionId}}"
+            },
+            {
+              "key": "error",
+              "value": "0"
+            },
+            {
+              "key": "cancel_order",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Verify QR Payment (Public)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/Payment/qr/a411a374-3480-41fa-8284-0c77dae928f1/verify",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "Payment",
+            "qr",
+            "a411a374-3480-41fa-8284-0c77dae928f1",
+            "verify"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

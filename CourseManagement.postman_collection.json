@@ -1,0 +1,542 @@
+{
+  "info": {
+    "_postman_id": "78b6f003-f183-4f87-bd6b-bf8ecc5c60a5",
+    "name": "CourseManagement",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "27168280"
+  },
+  "item": [
+    {
+      "name": "Get All Courses",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Course By Id",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/5178b3ca-5a0f-4636-b99c-a9421e7c762e",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "5178b3ca-5a0f-4636-b99c-a9421e7c762e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Course",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Tango\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Course",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Salsa Avanzada\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/5178b3ca-5a0f-4636-b99c-a9421e7c762e",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "5178b3ca-5a0f-4636-b99c-a9421e7c762e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Course",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/733922e4-1c68-429a-9014-27ef751846f5",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "733922e4-1c68-429a-9014-27ef751846f5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Scheduled Class",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"dayOfWeekIndex\": 2,\n    \"startTime\": \"10:00:00\",\n    \"endTime\": \"11:30:00\",\n    \"courseId\": \"5178b3ca-5a0f-4636-b99c-a9421e7c762e\",\n    \"teacherId\": \"13a6111c-8b17-4340-beef-ffe7a6f9cac9\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/scheduled",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "scheduled"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Scheduled Class",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"dayOfWeekIndex\": 1,\n    \"startTime\": \"08:30:00\",\n    \"endTime\": \"10:00:00\",\n    \"teacherId\": \"13a6111c-8b17-4340-beef-ffe7a6f9cac9\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/scheduled/a44397bc-0fdd-4c57-a666-f76154b3434c",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "scheduled",
+            "a44397bc-0fdd-4c57-a666-f76154b3434c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Scheduled Class",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/scheduled/3df9e8c1-f191-4dee-9178-d0ffc226f648",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "scheduled",
+            "3df9e8c1-f191-4dee-9178-d0ffc226f648"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Unique Class",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"date\": \"2026-06-15\",\n    \"startTime\": \"10:00:00\",\n    \"endTime\": \"11:30:00\",\n    \"courseId\": \"5178b3ca-5a0f-4636-b99c-a9421e7c762e\",\n    \"teacherId\": \"13a6111c-8b17-4340-beef-ffe7a6f9cac9\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/unique",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "unique"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Unique Class",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"date\": \"2025-09-15\",\n    \"startTime\": \"09:00:00\",\n    \"endTime\": \"10:30:00\",\n    \"teacherId\": \"13a6111c-8b17-4340-beef-ffe7a6f9cac9\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/unique/bec401bb-6be2-4d6b-b207-c6ad946a6b51",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "unique",
+            "bec401bb-6be2-4d6b-b207-c6ad946a6b51"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Unique Class",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/unique/6d4342b5-25ba-4f15-ada9-a616595c8263",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "unique",
+            "6d4342b5-25ba-4f15-ada9-a616595c8263"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Instructor Schedule (Me)",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Teacher JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/instructor/me",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "instructor",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Course Schedule",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/schedule",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "schedule"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Scheduled Class Exists",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/scheduled/exists/a44397bc-0fdd-4c57-a666-f76154b3434c/2025-09-01",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "scheduled",
+            "exists",
+            "a44397bc-0fdd-4c57-a666-f76154b3434c",
+            "2025-09-01"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Unique Class Exists",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{Admin JWT}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/CourseManagement/Course/unique/exists/bec401bb-6be2-4d6b-b207-c6ad946a6b51",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "CourseManagement",
+            "Course",
+            "unique",
+            "exists",
+            "bec401bb-6be2-4d6b-b207-c6ad946a6b51"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
