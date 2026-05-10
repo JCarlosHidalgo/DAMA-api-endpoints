@@ -1,0 +1,16 @@
+$kind: http-request
+url: localhost:8000/api/ClassAttendance/ClassAttendance/attendance/scheduled
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "classId": "a44397bc-0fdd-4c57-a666-f76154b3434c",
+        "classDate": "2025-09-01",
+        "courseName": "Salsa"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{Student JWT}}"
+order: 6000

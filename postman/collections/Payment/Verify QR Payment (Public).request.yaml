@@ -1,0 +1,4 @@
+$kind: http-request
+url: localhost:8000/api/Payment/qr/a411a374-3480-41fa-8284-0c77dae928f1/verify
+method: GET
+order: 9000

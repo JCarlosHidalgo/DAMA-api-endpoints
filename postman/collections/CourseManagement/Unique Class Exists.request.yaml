@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:8000/api/CourseManagement/Course/unique/exists/bec401bb-6be2-4d6b-b207-c6ad946a6b51
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{Admin JWT}}"
+order: 15000

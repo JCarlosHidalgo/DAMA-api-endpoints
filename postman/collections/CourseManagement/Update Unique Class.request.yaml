@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:8000/api/CourseManagement/Course/unique/bec401bb-6be2-4d6b-b207-c6ad946a6b51
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "date": "2025-09-15",
+        "startTime": "09:00:00",
+        "endTime": "10:30:00",
+        "teacherId": "13a6111c-8b17-4340-beef-ffe7a6f9cac9"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{Admin JWT}}"
+order: 10000

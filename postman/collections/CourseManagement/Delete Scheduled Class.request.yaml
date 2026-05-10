@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:8000/api/CourseManagement/Course/scheduled/3df9e8c1-f191-4dee-9178-d0ffc226f648
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{Admin JWT}}"
+order: 8000

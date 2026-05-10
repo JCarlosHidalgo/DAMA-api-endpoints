@@ -1,0 +1,14 @@
+$kind: http-request
+url: localhost:8000/api/CourseManagement/Course/5178b3ca-5a0f-4636-b99c-a9421e7c762e
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "name": "Salsa Avanzada"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{Admin JWT}}"
+order: 4000

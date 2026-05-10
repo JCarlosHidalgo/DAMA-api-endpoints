@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:8000/api/ClassAttendance/ClassAttendance/attendance/scheduled/student/6ba1c841-834f-4aeb-a285-a500b15638c9
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{Admin JWT}}"
+order: 2000

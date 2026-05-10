@@ -1,0 +1,15 @@
+$kind: http-request
+url: localhost:8000/api/Auth/register/teacher
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "username":"Teacher Nuevo",
+        "password":"Admin123"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{Admin JWT}}"
+order: 4000

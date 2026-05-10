@@ -1,0 +1,15 @@
+$kind: http-request
+url: localhost:8000/api/ClassAttendance/ClassAttendance/attendance/unique
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "classId": "bec401bb-6be2-4d6b-b207-c6ad946a6b51",
+        "courseName": "Salsa"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{Student JWT}}"
+order: 7000

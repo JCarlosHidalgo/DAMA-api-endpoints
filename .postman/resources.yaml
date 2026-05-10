@@ -1,0 +1,13 @@
+# Use this workspace to collaborate
+workspace:
+  id: 3c6a86a5-78a0-43b0-834a-025321709b14
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/Auth: 30beb8a3-bac8-4a30-8c1c-a2d708d958a1
+    ../postman/collections/ClassAttendance: 7b3acbe3-530b-4b9b-bc47-b61f8e0eead8
+    ../postman/collections/CourseManagement: 78b6f003-f183-4f87-bd6b-bf8ecc5c60a5
+    ../postman/collections/Credentials: d9865f83-6b8d-4f6d-a986-77f2e5d367a1
+    ../postman/collections/Payment: b16885c3-4dd7-430f-a5f5-a4c661c7ec89

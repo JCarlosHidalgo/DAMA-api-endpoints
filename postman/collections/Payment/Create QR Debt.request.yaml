@@ -1,0 +1,16 @@
+$kind: http-request
+url: localhost:8000/api/Payment/qr/14624f15-00c4-455e-81ba-df5d12f66910?email=hidalgososajuancarlos@gmail.com
+method: POST
+queryParams:
+  email: hidalgososajuancarlos@gmail.com
+body:
+  type: json
+  content: |-
+    {
+    	
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{Student JWT}}"
+order: 6000

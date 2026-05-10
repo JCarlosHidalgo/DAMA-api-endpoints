@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:8000/api/CourseManagement/Course/scheduled/a44397bc-0fdd-4c57-a666-f76154b3434c
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "dayOfWeekIndex": 1,
+        "startTime": "08:30:00",
+        "endTime": "10:00:00",
+        "teacherId": "13a6111c-8b17-4340-beef-ffe7a6f9cac9"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{Admin JWT}}"
+order: 7000

@@ -1,0 +1,16 @@
+$kind: http-request
+url: localhost:8000/api/Payment/DebtTemplate/b1d3f1f1-0000-4000-8000-000000000001
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "description": "30 clases de Salsa Premium",
+        "classQuantity": 30,
+        "cost": 320
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{Admin JWT}}"
+order: 4000

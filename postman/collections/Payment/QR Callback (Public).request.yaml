@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:8000/payment/qr/callback?transaction_id={{PendingTransactionId}}&error=0&cancel_order=0
+method: GET
+queryParams:
+  transaction_id: "{{PendingTransactionId}}"
+  error: "0"
+  cancel_order: "0"
+order: 8000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:8000/api/Payment/DebtTemplate/b1d3f1f1-0000-4000-8000-000000000003
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{Admin JWT}}"
+order: 5000

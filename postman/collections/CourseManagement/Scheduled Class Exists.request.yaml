@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:8000/api/CourseManagement/Course/scheduled/exists/a44397bc-0fdd-4c57-a666-f76154b3434c/2025-09-01
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{Admin JWT}}"
+order: 14000
